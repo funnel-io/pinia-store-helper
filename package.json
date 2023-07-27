@@ -1,7 +1,20 @@
 {
-  "name": "store-state",
-  "version": "0.0.0",
-  "private": true,
+  "name": "pinia-store-helper",
+  "version": "0.0.2",
+  "private": false,
+  "license": "MIT",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
